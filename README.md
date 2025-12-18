@@ -13,6 +13,16 @@ Solidity로 작성된 범용 Key-Value 저장 스마트 컨트랙트입니다. �
 - contracts/UniversalStorage.sol: 스마트 컨트랙트 소스
 - test/SimpleUniversalStorage.test.js: 컨트랙트 테스트 코드
 
+### 테스트 파일 설명
+
+- **test/SimpleUniversalStorage.test.js**
+	- UniversalStorage 컨트랙트의 기본 동작(숫자/문자열 저장, 사용자별 데이터 격리, 배열 저장, 인덱스 방식 등)을 단계별로 검증합니다.
+	- 다양한 데이터 타입 저장/조회, 여러 사용자 간 데이터 독립성, 배열 및 인덱스 기반 저장 방식의 차이와 효율성 등을 테스트합니다.
+
+- **test/CarbonTracking.test.js**
+	- UniversalStorage를 활용한 탄소배출 추적 시나리오를 테스트합니다.
+	- 공정별/월별/총 배출량 기록, 히스토리 관리, 집계 및 시뮬레이션 등 실제 탄소 데이터 관리에 필요한 기능을 검증합니다.
+
 ### 배포 및 테스트
 
 #### 1. 의존성 설치
